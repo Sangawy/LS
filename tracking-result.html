@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitleResult">Tracking Result | Baran Cargo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Styles specific to tracking result page, can be moved to style.css if preferred */
+        body {
+            background-color: #f0f2f5; /* Light grey background for focus */
+        }
+        .tracking-result-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .tracking-page-header {
+            background-color: var(--primary-navy);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin: -25px -25px 25px -25px; /* Extend to container edges */
+        }
+         .tracking-page-header img {
+            max-height: 40px;
+            margin-right: 10px;
+         }
+        .back-to-home {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: var(--primary-ls-red);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-home:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="ltr"> 
+
+    <div class="tracking-result-container">
+        <div class="tracking-page-header">
+           <!--<img src="assets/images/Lsexpresslogo.png" alt="Logo"> -->
+            <h4 id="trackingResultPageTitle" class="d-inline-block align-middle mb-0">Tracking Details</h4>
+        </div>
+
+        <div class="tracking-info-header row mb-3">
+            <div class="col-md-6">
+                <p><strong><span class="translate" data-key="trackNoLabel">Track No.:</span></strong> <span id="resultTrackNo"></span></p>
+                <p><strong><span class="translate" data-key="destinationLabel">Destination:</span></strong> <span id="resultDestination"></span></p>
+                <p><strong><span class="translate" data-key="totalPiecesLabel">Total Pieces:</span></strong> <span id="resultTotalPieces"></span></p>
+            </div>
+            <div class="col-md-6">
+                <p><strong><span class="translate" data-key="customerLabel">Customer:</span></strong> <span id="resultCustomer"></span></p>
+                <p><strong><span class="translate" data-key="shippingTypeLabel">Shipping Type:</span></strong> <span id="resultShippingType"></span></p>
+                <p><strong><span class="translate" data-key="totalBoxesLabel">Total Boxes:</span></strong> <span id="resultTotalBoxes"></span></p>
+                <p><strong><span class="translate" data-key="totalWeightLabel">Total Weight:</span></strong> <span id="resultTotalWeight"></span></p>
+                <p><strong><span class="translate" data-key="totalCBMLabel">Total CBM:</span></strong> <span id="resultTotalCBM"></span></p>
+            </div>
+        </div>
+
+        <h6 class="mb-3"><strong><span class="translate" data-key="currentStatusLabel">Current Status:</span></strong> <span id="resultCurrentStatus" class="fw-bold"></span></h6>
+        
+        <div class="tracking-timeline">
+          
+
+        </div>
+
+        <hr>
+        <h6><strong><span class="translate" data-key="listOfBoxesLabel">List Of Boxes:</span></strong></h6>
+        <div id="resultListOfBoxes" class="list-of-boxes">
+          
+        </div>
+
+        <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left me-2"></i> <span id="backToHomeBtn">Back to Home</span></a>
+    </div>
+
+    <script src="js/script.js"></script> 
+    <script src="js/tracking-page.js"></script>
+</body>
+</html>

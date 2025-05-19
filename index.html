@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Baran Cargo | LS Express Company</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+        <script>
+        function updateTrackingResultPageLanguage(lang) {
+            localStorage.setItem('selectedLanguageForResultPage', lang);
+        }
+    </script>
+
+
+
+</head>
+<body class="ltr">
+    <div class="top-header d-flex justify-content-between align-items-center">
+        <div class="company-name-en">
+            <span id="topHdrBaranCargo">Baran Cargo</span><br>
+            <span id="topHdrInDubai">In Dubai City</span>
+        </div>
+        <div class="company-name-en text-end">
+            <span id="topHdrLSExpress">LS Express Company</span><br>
+            <span id="topHdrIraqIran">Iraq & Iran</span>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand logo-container" href="#">
+                
+                <img src="assets/images/Lsexpresslogo.png" alt="Baran Cargo Logo" class="logo-image"> 
+                <span id="navBrandText">Baran Cargo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                   
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> <span id="navLinkHome">Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-info-circle me-1"></i> <span id="navLinkAbout">About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-truck me-1"></i> <span id="navLinkServices">Services</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-map-marker-alt me-1"></i> <span id="navLinkBranches">Branches</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-phone-alt me-1"></i> <span id="navLinkContact">Contact</span></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdownToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i> <span id="navLanguage">Language</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdownToggle" id="languageDropdownMenu">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ku')">کوردی</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('fa')">فارسی</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link btn btn-secondary btn-sm px-3 ms-2" href="#"><i class="fas fa-user me-1"></i> <span id="navLinkLogin">Login</span></a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light btn-sm px-3" href="#"><i class="fas fa-user-plus me-1"></i> <span id="navLinkRegister">Register</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero-section"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tracking-box">
+                        <h2 id="heroTitle">Track Your Shipment</h2>
+    <div class="input-group">
+        <input type="text" class="form-control" id="trackingInput" placeholder="Enter your tracking number...">
+        <button class="btn btn-track" type="button" id="trackShipmentBtnOnIndex"> 
+            <i class="fas fa-search me-2"></i> <span id="trackBtnText">Track</span>
+        </button>
+    </div>
+    <div class="mt-3 text-center">
+        <small class="text-muted" id="heroHint">You can find your tracking number on your shipping receipt</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title" id="servicesMainTitle">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-ship fa-3x mb-3 service-icon"></i>
+                            <h4 id="serviceSeaFreightTitle">Sea Freight</h4>
+                            <p id="serviceSeaFreightDesc">Shipping services from Dubai and China to Iraq ports with reliable tracking and handling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-plane-departure fa-3x mb-3 service-icon"></i>
+                            <h4 id="serviceAirFreightTitle">Air Freight</h4>
+                            <p id="serviceAirFreightDesc">Fast and reliable air cargo services connecting major global hubs with Iraq and Iran.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-truck fa-3x mb-3 service-icon"></i>
+                            <h4 id="serviceLandTransportTitle">Land Transport</h4>
+                            <p id="serviceLandTransportDesc">Ground transportation services between Iraq and Iran with secure and monitored delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="mb-4" id="ctaMainTitle">Ready to Ship with Confidence?</h2>
+            <p class="mb-4" id="ctaMainText">Experience reliable shipping across China, Dubai, Iraq, and Iran with our expert logistics service.</p>
+            <a href="#" class="btn cta-btn" id="ctaBtn">Get a Quote Today</a>
+        </div>
+    </section>
+    
+    <section class="branches-slider py-5">
+        <div class="container">
+            <h2 class="text-center section-title" id="branchesMainTitle">Our Branches</h2>
+            <div class="row">
+                 <div class="col-md-4 mb-4">
+                    <div class="branch-card">
+                        <h4 id="branchChinaYiwuTitle">China / Yiwu City</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span id="branchChinaYiwuAddr">浙江义乌市福田银座A座11楼1106室</span></p>
+                        <p><i class="fas fa-phone-alt me-2"></i> <span id="branchChinaYiwuContact">18042216637 TAIYEB AZIZI</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="branch-card">
+                        <h4 id="branchDubaiTitle">Dubai</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span id="branchDubaiAddr">Deira - Abubaker Al Siddique Rd, Opposite AG CARS Services - 9A St</span></p>
+                        <p><i class="fas fa-user-tie me-2"></i> <span id="branchDubaiManagerLabel">Warehouse Manager:</span> <span id="branchDubaiManagerName">Mr. Adnan</span></p>
+                        <p><i class="fab fa-whatsapp me-2"></i> <span id="branchDubaiWhatsapp">+971508274405</span> (<span id="branchDubaiSim">SIM & WhatsApp</span>)</p>
+                    </div>
+                </div>
+                 <div class="col-md-4 mb-4">
+                    <div class="branch-card">
+                        <h4 id="branchSulaymaniyahTitle">Iraq / Sulaymaniyah</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span id="branchSulaymaniyahAddr">Kawa Street - Haji Salih Qasim Market - Second Floor - No. 34</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="branch-card">
+                        <h4 id="branchDuhokTitle">Iraq / Duhok</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span id="branchDuhokAddr">Downtown / Cinema Nawroz Street, Nawroz Building, Second Floor</span></p>
+                        <p><i class="fas fa-phone-alt me-2"></i> <span id="branchDuhokPhone1">009647502901440</span></p>
+                        <p><i class="fas fa-phone-alt me-2"></i> <span id="branchDuhokPhone2">009647764401440</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="branch-card">
+                        <h4 id="branchMariwanTitle">Iran / Mariwan</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span id="branchMariwanAddr">Navid - Mohammadi Karimi Building</span></p>
+                        <p><i class="fas fa-phone-alt me-2"></i> <span id="branchMariwanPhone">+98 914 383 0025</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="branch-card">
+                        <h4 id="branchBanehTitle">Iran / Baneh</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <span id="branchBanehAddr">Hamid - Ali Mohammadi Building</span></p>
+                        <p><i class="fas fa-phone-alt me-2"></i> <span id="branchBanehPhone">+98 914 383 0065</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center text-lg-start">
+  
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4" id="footerCompanyTitle">LS Express Company</h5>
+                    <p id="footerCompanyDesc">
+                        LS Express Company for General Trading and Transport / Limited. Providing cargo transportation services between China, Dubai, Iraq and Iran
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4" id="footerQuickLinks">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i><span id="footerLinkHome">Home</span></a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i><span id="footerLinkAbout">About</span></a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i><span id="footerLinkServices">Services</span></a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i><span id="footerLinkBranches">Branches</span></a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i><span id="footerLinkContact">Contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4" id="footerContactTitle">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> <span id="footerEmail">info@barancargo.com</span></li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> <span id="footerPhone">+964 771 950 1156</span></li>
+                        <li class="mb-2"><i class="fas fa-globe me-2"></i> <span id="footerWebsite">www.LS-Shaho.com</span></li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="me-3 text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="me-3 text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3 text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span id="footerCopyText">© 2025 All Rights Reserved:</span>
+            <a class="text-white" href="#" id="footerCopyLink">Baran Cargo / LS Express Company</a>
+        </div>
+    </footer>
+
+    {/*-- Tracking Result Modal --*/}
+    <div class="modal fade" id="trackingResultModal" tabindex="-1" aria-labelledby="trackingResultModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="trackingResultModalLabel"><i class="fas fa-truck-loading me-2"></i> <span class="translate" data-key="trackingDetailsTitle">Tracking Details</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tracking-info-header row mb-3">
+                        <div class="col-md-6">
+                            <p><strong><span class="translate" data-key="trackNoLabel">Track No.:</span></strong> <span id="modalTrackNo"></span></p>
+                            <p><strong><span class="translate" data-key="destinationLabel">Destination:</span></strong> <span id="modalDestination"></span></p>
+                            <p><strong><span class="translate" data-key="totalPiecesLabel">Total Pieces:</span></strong> <span id="modalTotalPieces"></span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong><span class="translate" data-key="customerLabel">Customer:</span></strong> <span id="modalCustomer"></span></p>
+                            <p><strong><span class="translate" data-key="shippingTypeLabel">Shipping Type:</span></strong> <span id="modalShippingType"></span></p>
+                            <p><strong><span class="translate" data-key="totalBoxesLabel">Total Boxes:</span></strong> <span id="modalTotalBoxes"></span></p>
+                            <p><strong><span class="translate" data-key="totalWeightLabel">Total Weight:</span></strong> <span id="modalTotalWeight"></span></p>
+                            <p><strong><span class="translate" data-key="totalCBMLabel">Total CBM:</span></strong> <span id="modalTotalCBM"></span></p>
+                        </div>
+                    </div>
+
+                    <h6 class="mb-3"><strong><span class="translate" data-key="currentStatusLabel">Current Status:</span></strong> <span id="modalCurrentStatus" class="fw-bold"></span></h6>
+                    
+                    <div class="tracking-timeline">
+                        {/*-- Timeline items will be injected here by JavaScript --*/}
+                    </div>
+
+                    <hr>
+                    <h6><strong><span class="translate" data-key="listOfBoxesLabel">List Of Boxes:</span></strong></h6>
+                    <div id="modalListOfBoxes" class="list-of-boxes">
+                        {/*-- Box items will be injected here by JavaScript --*/}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="translate" data-key="closeBtn">Close</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script> 
+</body>
+</html>
